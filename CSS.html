@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Web Learning </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="logo_1.png" type="image/x-icon">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="myjs.js">
+<style>
+/* Center the loader */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('https://i.gifer.com/Ml8R.gif') no-repeat center;
+  z-index: 99999;
+ 
+</style>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+<!----------------------- page Loader -------------->
+<div id="loader"></div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+<!----------------------- Header ------------------>
+<div class="header">
+  <h2> Web Learning</h2>
+</div>
+
+
+<!------------------ Horizontal nav ----------------------->
+<div id="navbar">
+  <a href="index.html">HTML</a>
+  <a class="active" href="javascript:void(0)">CSS</a>
+  <a href="javascript:void(0)">JAVASCRIPT</a>
+  <a href="javascript:void(0)">SQL</a>
+  <a href="javascript:void(0)">PYTHON</a>
+  <a href="javascript:void(0)">PHP</a>
+</div>
+
+<script>
+
+</script>
+
+
+<!---------------  Vertical nav  --------------->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'CSS HOME')" id="defaultOpen">CSS HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Introduction')">CSS Introduction</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Syntax')">CSS Syntax</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Selectors')">CSS Selectors</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS How To')">CSS How To</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Comments')">CSS Comments</button>
+<div class="dropdown"> <button class="tablinks">CSS Colors</button>
+  <div class="dropdown-content">
+    <a>  <button class="tablinks" onclick="openCity(event, 'Colors')">Colors</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'RGB')">RGB</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'HEX')">HEX</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'HSL')">HSL</button> </a>
+  </div></div>
+<div class="dropdown"> <button class="tablinks">CSS Backgrounds</button>
+  <div class="dropdown-content">
+    <a>  <button class="tablinks" onclick="openCity(event, 'Background Color')">Background Color</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Background Image')">Background Image</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Background Repeat')">Background Repeat</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Background Attachement')">Background Attachment</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Background Shorthand')">Background Shorthand</button> </a>
+  </div></div>
+<div class="dropdown"> <button class="tablinks">CSS Borders</button>
+  <div class="dropdown-content">
+    <a>  <button class="tablinks" onclick="openCity(event, 'Borders')">Borders</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Border Width')">Border Width</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Border Color')">Border Color</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Border Sides')">Border Sides</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Border Shorthand')">Border Shorthand</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Rounded Borders')">Rounded Borders</button> </a>
+  </div></div>
+ <!-- <button class="tablinks" onclick="openCity(event, 'CSS Colors')">CSS Colors</button> 
+  <button class="tablinks" onclick="openCity(event, 'CSS Backgrounds')">CSS Backgrounds</button> 
+  <button class="tablinks" onclick="openCity(event, 'CSS Borders')">CSS Borders</button> -->
+  <button class="tablinks" onclick="openCity(event, 'CSS Margins')">CSS Margins</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Padding')">CSS Padding</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Height/Width')">CSS Height/Width</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Box Model')">CSS Box Model</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Outline')">CSS Outline</button>
+
+<div class="dropdown"> <button class="tablinks">CSS Text</button>
+  <div class="dropdown-content">
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Color')">Text Color</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Alignment')">Text Alignment</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Decoration')">Text Decoration</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Transformation')">Text Transformation</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Spacing')">Text Spacing</button> </a>
+    <a>  <button class="tablinks" onclick="openCity(event, 'Text Shadow')">Text Shadow</button> </a>
+  </div></div>
+  <button class="tablinks" onclick="openCity(event, 'CSS Fonts')">CSS Fonts</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Icons')">CSS Icons</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Links')">CSS Links</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Lists')">CSS Lists</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Tables')">CSS Tables</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Display')">CSS Display</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Max-width')">CSS Max-width</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Positions')">CSS Position</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Z-index')">CSS Z-index</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Overflow')">CSS Overflow</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Float')">CSS Float</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Inline-block')">CSS Inline-block</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Align')">CSS Align</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Combinators')">CSS Combinators</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Pseudo-class')">CSS Pseudo-class</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Pseudo-element')">CSS Pseudo-element</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Opacity')">CSS Opacity</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Navigation Bar')">CSS Navigation Bar</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Dropdowns')">CSS Dropdowns</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Image Gallery')">CSS Image Gallery</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Image Sprites')">CSS Image Sprites</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Attr Selectors')">CSS Attr Selectors</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Forms')">CSS Forms</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Counters')">CSS Counters</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Website Layout')">CSS Website Layout</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Units')">CSS Units</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Specidicity')">CSS Specificity</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS !important')">CSS !important</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS Math Functions')">CSS Math Functions</button>
+</div>
+
+<div id="CSS HOME" class="tabcontent">
+  <h3> CCS Tutorial </h3>
+  <hr>
+  <p style="background-color:#e6f9ff; padding-top:2%; padding-bottom:2%"> CSS is the language we use to style an HTML document.<br><br> CSS describes how HTML elements should be displayed.<br><br> This tutorial will teach you CSS from basic to advanced. 
+  <br><br> <a class="w3-btn w3-margin-bottom" href="CSS Introduction" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Start learning CSS now &raquo;</a> </p>
+  <hr>
+  <h4> Examples in Each Chapter </h4>
+  <p> This CSS tutorial contains hundreds of CSS examples.<br><br> With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+  <a href ="https://codepen.io/darshan-star/pen/GROEZVx"> <img src="css-pic\a1.png"> </a>
+  <p><i> Click on the "Try it Yourself" button to see how it works. </i></p>
+  <hr>
+  <h4> CSS Examples </h4>
+  <p> Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.</p>
+  <p><a href="#">Go to CSS Examples!</a></p>
+  <hr>
+  <h4> Use the Menu </h4>
+  <p> We recommend reading this tutorial, in the sequence listed in the menu.<br><br> If you have a large screen, the menu will always be present on the left.<br><br>If you have a small screen, open the menu by clicking the top menu sign <span class="w3-xlarge">&#9776;</span>.</p>
+  <hr>
+  <h4> CSS Templates </h4>
+  <p> We have created some responsive W3.CSS templates for you to use.<br><br> You are free to modify, save, share, and use them in all your projects.<br><br> <a href="#">Free CSS Templates!</a></p>
+  <hr><hr>
+</div>
+
+<div id="CSS Introduction" class="tabcontent">
+  <h3> CCS Introduction </h3>
+  <hr>
+  <p> CSS is the language we use to style a Web page. </p>
+  <hr>
+  <h4> What is CSS? </h4>
+  <ul> <li>CSS stands for Cascading Style Sheets</li> <li>CSS describes how HTML elements are to be displayed on screen,  paper, or in other media</li> <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li> <li>External stylesheets are stored in CSS files</li>
+  </ul><hr>
+  <h4> CSS Demo - One HTML Page - Multiple Styles! </h4>
+  <p> Here we will show one HTML page displayed with four different stylesheets. Click on the &quot;Stylesheet 1&quot;, &quot;Stylesheet 2&quot;, &quot;Stylesheet 3&quot;, &quot;Stylesheet 4&quot; links below to see the different styles:</p>
+  <iframe src="demo.htm" title="W3Schools HTML Tutorial" height="350px" width="99%"></iframe>
+  <hr>
+  <h4> Why Use CSS? </h4>
+  <p> CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+  <a href ="https://codepen.io/darshan-star/pen/GROEZVx"> <img src="css-pic\a1.png"> </a>
+  <hr>
+  <h4> CSS Solved a Big Problem </h4>
+  <p> HTML was NEVER intended to contain tags for formatting a web page!<br><br> HTML was created to describe the content of a web page, like:<br><br> &lt;h1&gt;This is a heading&lt;/h1&gt;<br><br> &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br> When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single  page, became a long and expensive process.</p>
+  <p> To solve this problem, the World Wide Web Consortium (WL) created CSS.<br><br> CSS removed the style formatting from the HTML page!</p>
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> If you don't know what HTML is, we suggest that you read our <a href="index.html">HTML Tutorial</a>.</p> 
+  <hr>
+  <h4> CSS Saves a Lot of Work! </h4>
+  <p> The style definitions are normally saved in external .css files.<br><br> With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+  <hr><hr>
+</div>
+
+<div id="CSS Syntax" class="tabcontent">
+  <h3> CCS Syntax </h3>
+  <hr>
+  <p> A CSS rule consists of selector and a declaration block. </p>
+  <hr>
+  <h4> CSS Syntax </h4>
+  <p> <img src="https://www.w3schools.com/css/img_selector.gif" alt="CSS selector" class="w3-image"></p>
+  <p> The selector points to the HTML element you want to style.<br><br> The declaration block contains one or more declarations separated by semicolons.<br><br> Each declaration includes a CSS property name and a value, separated by a colon.<br><br> Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1"> <img src="css-pic\a2.png"> </a>
+  <h5> Example Explained </h5>
+  <ul> <li><a style="color:Tomato; background-color:#e6e6ff">p</a> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li> <li><a style="color:Tomato; background-color:#e6e6ff">color</a> is a property, and <a style="color:Tomato; background-color:#e6e6ff">red</a> is the property value</li> <li><a style="color:Tomato; background-color:#e6e6ff">text-align</a> is a property, and <a style="color:Tomato; background-color:#e6e6ff">center</a> is the property value</li> </ul>
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> You will learn much more about CSS selectors and CSS properties in the next chapters!</p>
+  <hr><hr>
+</div>
+
+<div id="CSS Selectors" class="tabcontent">
+  <h3> CCS Selectors </h3>
+  <hr>
+  <p> A CSS selector selects the HTML element(s) you want to style.
+  <hr>
+  <h4> CSS Selectors </h4>
+  <p> CSS selectors are used to &quot;find&quot; (or select) the HTML elements you want to style.<br><br> We can divide CSS selectors into five categories:</p>
+  <ul> <li>Simple selectors (select elements based on name, id, class)</li> <li><a href="#">Combinator selectors</a> (select elements based on a specific relationship between them)</li> <li><a href="#">Pseudo-class selectors</a> (select elements based on a certain state)</li> <li><a href="#">Pseudo-elements selectors</a> (select and style a part of an element)</li> <li><a href="#">Attribute selectors</a> (select elements based on an attribute or attribute value)</li> </ul>
+  <p> This page will explain the most basic CSS selectors.</p>
+  <hr>
+  <h4> The CSS element Selector </h4>
+  <p> The element selector selects HTML elements based on the element name.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element"> <img src="css-pic\a3.png"> </a>
+  <hr>
+  <h4> The CSS id Selector </h4>
+  <p> The id selector uses the id attribute of an HTML element to select a specific element.<br><br> The id of an element is unique within a page, so the id selector is used to select one unique element!<br><br> To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id"> <img src="css-pic\a4.png"> </a>
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> <strong>Note:</strong> An id name cannot start with a number!</p>
+  <hr>
+  <h4> The CSS class Selector </h4>
+  <p> The class selector selects HTML elements with a specific class attribute.<br><br> To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class"> <img src="css-pic\a5.png"> </a> 
+  <p> You can also specify that only specific HTML elements should be affected by a class. </p> 
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class"> <img src="css-pic\a6.png"> </a> 
+  <p> HTML elements can also refer to more than one class. </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class2"> <img src="css-pic\a7.png"> </a>
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> <strong> Note: </strong> A class name cannot start with a number! </p>
+  <hr>
+  <h4> The CSS Universal Selector </h4>
+  <p> The universal selector (*) selects all HTML elements on the page.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_universal"> <img src="css-pic\a8.png"> </a>
+  <hr>
+  <h4> The CSS Grouping Selector </h4>
+  <p> The grouping selector selects all the HTML elements with the same style definitions.<br><br> Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+  <img src="css-pic\a9.png"> 
+  <p> It will be better to group the selectors, to minimize the code.<br><br> To group selectors, separate each selector with a comma. </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_grouping"> <img src="css-pic\a10.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="CSS How To" class="tabcontent">
+  <h3> How To Add CSS </h3>
+  <hr>
+  <p> When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. </p>
+  <hr>
+  <h4> Three Ways to Insert CSS </h4>
+  <p>There are three ways of inserting a style sheet:</p>
+  <ul> <li>External CSS</li> <li>Internal CSS</li> <li>Inline CSS</li></ul>
+  <hr>
+  <h4> External CSS </h4>
+  <p> With an external style sheet, you can change the look of an entire website by changing just one file!<br><br> Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_external"> <img src="css-pic\a11.png"> </a>
+  <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.<br><br> The external .css file should not contain any HTML tags.<br><br> Here is how the &quot;mystyle.css&quot; file looks:</p>
+  <img src="css-pic\a12.png">
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> <strong>Note:</strong> Do not add a space between the property value and the unit:<br> Incorrect (space): <a style="color:Tomato; background-color:#e6e6ff">margin-left: 20 px;</a><br> Correct (nospace): <a style="color:Tomato; background-color:#e6e6ff">margin-left: 20px;</a> </p>
+  <h4> Internal CSS </h4>
+  <p> An internal style sheet may be used if one single HTML page has a unique style.<br><br> The internal style is defined inside the &lt;style&gt; element, inside the head section.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_internal"> <img src="css-pic\a13.png"> </a>
+  <hr>
+  <h4> Inline CSS </h4>
+  <p> An inline style may be used to apply a unique style for a single element.<br><br> To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_inline"> <img src="css-pic\a14.png"> </a>
+  <p style ="background-color:#ffddcc; padding-top:20px; padding-bottom:20px"> <strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p>
+  <hr>
+  <h4> Multiple Style Sheets </h4>
+  <p> If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.&nbsp;</p>
+  <img src="css-pic\a15.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple"> <img src="css-pic\a16.png"> </a>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple2"> <img src="css-pic\a17.png"> </a>
+  <hr>
+  <h4> Cascading Order </h4>
+  <p> What style will be used when there is more than one style specified for an HTML element?<br><br> All the styles in a page will &quot;cascade&quot; into a new &quot;virtual&quot; style sheet by the following rules, where number one has the highest priority:</p>
+  <ol> <li>Inline style (inside an HTML element)</li> <li>External and internal style sheets (in the head section)</li> <li>Browser default</li> </ol>
+  <p> So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p>
+  <p> <a class="ws-btn" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_cascade" target="_blank">Try it Yourself &raquo;</a></p>
+  <hr><hr>
+</div>
+
+<div id="CSS Comments" class="tabcontent">
+  <h3> CSS Comments </h3>
+  <hr>
+  <p> CSS comments are not displayed in the browser, but they can help document your source code. </p>
+  <hr>
+  <h4> CSS Comments </h4>
+  <p> Comments are used to explain the code, and may help when you edit the source code at a later date.<br><br> Comments are ignored by browsers.<br><br> A CSS comment is placed inside the <a style="color:Tomato; background-color:#e6e6ff">&lt;style&gt;</a> element, and starts with <a style="color:Tomato; background-color:#e6e6ff">/*</a> and ends with <a style="color:Tomato; background-color:#e6e6ff">*/</a>: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_comments"> <img src="css-pic\a18.png"> </a>
+  <p> You can add comments wherever you want in the code: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_comments2"> <img src="css-pic\a19.png"> </a>
+  <p> Comments can also span multiple lines: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_comments3"> <img src="css-pic\a20.png"> </a>
+  <hr>
+  <h4> HTML and CSS Comments </h4>
+  <p> From the HTML tutorial, you learned that you can add comments to your HTML source by using the <a style="color:Tomato; background-color:#e6e6ff">&lt;!--...--&gt;</a> syntax.<br><br> In the following example, we use a combination of HTML and CSS comments:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_comments4"> <img src="css-pic\a21.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Colors" class="tabcontent">
+  <h3> CSS Colors </h3>
+  <hr>
+  <p> Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. </p>
+  <hr>
+  <h4> CSS Color Names </h4>
+  <p> In CSS, a color can be specified by using a predefined color name:</p>
+  <img src="css-pic\a22.png">
+  <p> <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_names" class="ws-btn w3-margin-bottom">Try it Yourself &raquo;</a></p>
+  <p> CSS/HTML support <a href="#">140 standard color names</a>.</p>
+  <hr>
+  <h4> CSS Background Color </h4>
+  <p> You can set the background color for HTML elements:</p> <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World</div>
+  <br> <div class="w3-container" style="background-color:tomato;color:white; padding: 10px;"><br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br> </div>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_background"> <img src="css-pic\a23.png"> </a>
+  <hr>
+  <h4> CSS Text Color </h4>
+  <p> You can set the color of text:</p>
+  <h5 style="color:tomato">Hello World </h5>
+  <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> 
+  <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_text"> <img src="css-pic\a24.png"> </a>
+  <hr>
+  <h4> CSS Border Color </h4>
+  <p> You can set the color of borders: </p>
+  <h4 style="border: 2px solid Tomato;">Hello World </h4>
+  <h4 style="border: 2px solid DodgerBlue;">Hello World </h4>
+  <h4 style="border: 2px solid Violet;">Hello World </h4>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_border"> <img src="css-pic\a25.png"> </a>
+  <hr>
+  <h4> CSS Color Values </h4>
+  <p> In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:<br><br> Same as color name "Tomato":</p>
+  <div class="w3-center" style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+      <div style="background-color:rgb(255, 99, 71);margin:10px 0;">rgb(255, 99, 71)</div> <div style="background-color:#ff6347;margin:10px 0;">#ff6347</div> <div style="background-color:hsl(9, 100%, 64%);margin:10px 0;">hsl(9, 100%, 64%)</div>
+  </div>
+  <p>Same as color name "Tomato", but 50% transparent:</p>
+  <div class="w3-center" style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+     <div style="background-color:rgba(255, 99, 71, 0.5);margin:10px 0;">rgba(255, 99, 71, 0.5)</div> <div style="background-color:hsla(9, 100%, 64%, 0.5);margin:10px 0;">hsla(9, 100%, 64%, 0.5)</div>
+  </div>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_values"> <img src="css-pic\a26.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <b> Learn more about Color Values</b><br><br> You will learn more about <a> <button class="tablinks" onclick="openCity(event, 'RGB')">RGB</button> </a>, <a> <button class="tablinks" onclick="openCity(event, 'RGB')">HEX</button> </a> and <a> <button class="tablinks" onclick="openCity(event, 'RGB')">HSL</button> </a> in the next chapters. </p>
+  <hr><hr>
+</div>
+
+<div id="RGB" class="tabcontent">
+  <h3> CSS RGB Colors </h3>
+  <hr>
+  <p> An RGB color value represents RED, GREEN, and BLUE light sources. </p>
+  <hr>
+  <h4> RGB Value </h4>
+  <p>In CSS, a color can be specified as an RGB value, using this formula:</p> 
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgb(<em>red,</em> <em>green</em>, <em>blue</em>)</p>
+  <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br><br> For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.<br><br> To display black, set all color parameters to 0, like this: rgb(0, 0, 0).<br><br> To display white, set all color parameters to 255, like this: rgb(255, 255, 255). <br><br> Experiment by mixing the RGB values below:</p>
+  <img src="css-pic\a27.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgb2"> <img src="css-pic\a28.png"> </a>
+  <p> Shades of gray are often defined using equal values for all the 3 light sources: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgb_gray"> <img src="css-pic\a29.png"> </a>
+  <h4> RGBA Value </h4>
+  <p> RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.<br><br> An RGBA color value is specified with:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgba(<em>red,</em> <em>green</em>, <em>blue, alpha</em>)</p>
+  <p> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):<br><br> Experiment by mixing the RGBA values below:</p>
+  <img src="css-pic\a30.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_rgba2"> <img src="css-pic\a31.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="HEX" class="tabcontent">
+  <h3> CSS HEX Colors </h3>
+  <hr>
+  <p> A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. </p>
+  <hr>
+  <h4> HEX Value </h4>
+  <p> In CSS, a color can be specified using a hexadecimal value in the form:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">#<em>rrggbb</em></p>
+  <p> Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).<br><br> For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).<br><br>To display black, set all values to 00, like this: #000000.<br><br> To display white, set all values to ff, like this: #ffffff. &nbsp;<br><br> Experiment by mixing the HEX values below:</p>
+  <img src="css-pic\a32.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hex2"> <img src="css-pic\a33.png"> </a>
+  <p> Shades of gray are often defined using equal values for all the 3 light sources: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hex_gray"> <img src="css-pic\a34.png"> </a>
+  <h4> 3 Digit HEX Value </h4>
+  <p> Sometimes you will see a 3-digit hex code in the CSS source.<br> <br> The 3-digit hex code is a shorthand for some 6-digit hex codes.<br><br> The 3-digit hex code has the following form: #rgb <br><br> Where r, g, and b represents the red, green, and blue components with values between 0 and f. <br><br> The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each components. So, if we have #ff00cc, it can be written like this: #f0c.<br><br> Here is an example: </p>
+  <hr> 
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hex_3digit"> <img src="css-pic\a35.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="HSL" class="tabcontent">
+  <h3> CSS HSL Colors </h3>
+  <hr>
+  <p> HSL stands for hue, saturation, and lightness. </p>
+  <h4> HSL Value </h4>
+  <p> In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
+  <p> Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br><br> Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.<br><br> Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white<br><br> Experiment by mixing the HSL values below:</p>
+  <img src="css-pic\a36.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl2"> <img src="css-pic\a37.png"> </a>
+  <hr>
+  <h5> Saturation </h5>
+  <p> Saturation can be described as the intensity of a color.<br><br> 100% is pure color, no shades of gray<br><br> 50% is 50% gray, but you can still see the color.<br><br> 0% is completely gray, you can no longer see the color.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_saturation"> <img src="css-pic\a38.png"> </a>
+  <hr>
+  <h5> Lightness </h5>
+  <p> The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_lightness"> <img src="css-pic\a39.png"> </a>
+  <hr>
+  <h5> Shades of Gray </h5>
+  <p> Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsl_gray"> <img src="css-pic\a40.png"> </a>
+  <hr>
+  <h4> HSLA Value </h4>
+  <p> HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.<br><br> An HSLA color value is specified with:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsla(<em>hue,</em> <em>saturation</em>, <em>lightness, alpha</em>)</p>
+  <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):<br><br> Experiment by mixing the HSLA values below:</p>
+  <img src="css-pic\a41.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_hsla2"> <img src="css-pic\a42.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Background Color" class="tabcontent">
+  <h3> CSS Backgrounds </h3>
+  <hr>
+  <p>The CSS background properties are used to add background effects for elements.</p>
+  <hr>
+  <div style="color:#000;width:100%;border:1px solid gray;padding:16px;background:#e1efbb url('mountain.jpg')">
+  <p>In these chapters, you will learn about the following CSS background properties:</p>
+  <ul> <li> <a style="color:crimson; background-color:#f2f2f2">background-color</a></li> <li> <a style="color:crimson; background-color:#f2f2f2">background-image</a></li> <li> <a style="color:crimson; background-color:#f2f2f2">background-repeat</a></li> <li> <a style="color:crimson; background-color:#f2f2f2">background-attachment</a></li> <li> <a style="color:crimson; background-color:#f2f2f2">background-position</a></li> <li> <a style="color:crimson; background-color:#f2f2f2">background</a> (shorthand property)</li>
+  </ul></div><hr>
+  <h4> CSS background-color </h4>
+  <p> The <a style="color:crimson; background-color:#f2f2f2">background-color</a> property specifies the background color of an element.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_body"> <img src="css-pic\a43.png"> </a>
+  <p>With CSS, a color is most often specified by:</p>
+  <ul> <li>a valid color name - like &quot;red&quot;</li> <li>a HEX value - like &quot;#ff0000&quot;</li> <li>an RGB value - like &quot;rgb(255,0,0)&quot;</li> </ul>
+  <p>Look at <a href="#">CSS Color Values</a> for a complete list of possible color values.</p>
+  <hr>
+  <h4> Other Elements </h4>
+  <p> You can set the background color for any HTML elements:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_elements"> <img src="css-pic\a44.png"> </a>
+  <hr>
+  <h4> Opacity / Transparency </h4>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">opacity</a> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+  <img src="css-pic\a45.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_opacity"> <img src="css-pic\a46.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <strong>Note:</strong> When using the <a style="color:crimson; background-color:#f2f2f2">opacity</a> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+  <hr>
+  <h4> Transparency using RGBA </h4>
+  <p>If you do not want to apply opacity to child elements, like in our example above, use <strong>RGBA</strong> color values. The following example sets the opacity for the background color and not the text:</p>
+  <img src="css-pic\a47.png">
+  <p> You learned from our <a><button class="tablinks" onclick="openCity(event, 'Colors')">Colors</button></a>, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an <strong>alpha</strong> channel (RGB<strong>A</strong>) - which specifies the opacity for a color.<br><br> An RGBA color value is specified with: rgba(red, green, blue, <em>alpha</em>). The <em>alpha</em> parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+  <p> <strong>Tip:</strong> You will learn more about RGBA Colors in our <a href="#">CSS Colors Chapter</a>.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_opacity2"> <img src="css-pic\a48.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Background Image" class="tabcontent">
+  <h3> CSS Background Image </h3>
+  <hr>
+  <p> The <a style="color:crimson; background-color:#f2f2f2">background-image</a> property specifies an image to use as the background of an element.<br><br> By default, the image is repeated so it covers the entire element.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image"> <img src="css-pic\a49.png"> </a>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_bad"> <img src="css-pic\a50.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <b>Note:</b> When using a background image, use an image that does not disturb the text.</p>
+  <p>The background image can also be set for specific elements, like the &lt;p&gt; element:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_p"> <img src="css-pic\a51.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Background Repeat" class="tabcontent">
+  <h3> CSS Background Image Repeat </h3>
+  <hr>
+  <p> By default, the <a style="color:crimson; background-color:#f2f2f2">background-image</a> property repeats an image both horizontally and vertically.<br><br> Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient1"> <img src="css-pic\a52.png"> </a>
+  <p> If the image above is repeated only horizontally (<a style="color:crimson; background-color:#f2f2f2"> background-repeat: repeat-x;</a>), the background will look better: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient2"> <img src="css-pic\a53.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <b>Tip:</b> To repeat an image vertically, set <a style="color:crimson; background-color:#f2f2f2">background-repeat: repeat-y;</a></p>
+  <hr>
+  <h4> CSS background-repeat: no-repeat </h4>
+  <p> Showing the background image only once is also specified by the <a style="color:crimson; background-color:#f2f2f2">background-repeat</a> property:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_norepeat"> <img src="css-pic\a54.png"> </a>
+  <p> In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much. </p>
+  <h4> CSS background-position </h4>
+  <p> The <a style="color:crimson; background-color:#f2f2f2"> background-position</a> property is used to specify the position of the background image.</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position"> <img src="css-pic\a55.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Background Attachment" class="tabcontent">
+  <h3> CSS Background Attachment </h3>
+  <hr>
+  <p> The <a style="color:crimson; background-color:#f2f2f2"> background-attachment </a> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page): </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment"> <img src="css-pic\a56.png"> </a>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment2"> <img src="css-pic\a57.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Background Shorthand" class="tabcontent">
+  <h3> CSS Background Shorthand </h3>
+  <hr>
+  <p> To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.<br><br> Instead of writing: </p>
+  <img src="css-pic\a58.png">
+  <p> You can use the shorthand property <a style="color:crimson; background-color:#f2f2f2"> background: </a> </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_shorthand"> <img src="css-pic\a59.png"> </a>
+  <p> When using the shorthand property the order of the property values is:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">background-color</a></li> <li><a style="color:crimson; background-color:#f2f2f2">background-image</a></li> <li><a style="color:crimson; background-color:#f2f2f2">background-repeat</a></li> <li><a style="color:crimson; background-color:#f2f2f2">background-attachment</a></li> <li><a style="color:crimson; background-color:#f2f2f2">background-position</a></li> </ul>
+  <p> It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+  <hr><hr>
+</div>
+
+<div id="Borders" class="tabcontent">
+  <h3> CSS Borders </h3>
+  <hr>
+  <p> The CSS border properties allow you to specify the style, width, and color of an element's border. </p>
+  <hr>
+  <div class="w3-container w3-border w3-border-black w3-margin-top"> <p>I have borders on all sides.</p>
+  </div><br>
+  <div class="w3-container w3-border-bottom w3-border-red"> <p>I have a red bottom border.</p>
+  </div><br>
+  <div class="w3-container w3-border w3-round-xlarge"> <p>I have rounded borders.</p>
+  </div><br>
+  <div class="w3-container w3-pale-blue w3-leftbar w3-border-blue"> <p>I have a blue left border.</p>
+  </div><hr>
+  <h4> CSS Border Style </h4>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">border-style</a> property specifies what kind of border to display.<br><br> The following values are allowed:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">dotted</a> - Defines a dotted border</li> <li><a style="color:crimson; background-color:#f2f2f2">dashed</a> - Defines a dashed border</li> <li><a style="color:crimson; background-color:#f2f2f2">solid</a> - Defines a solid border</li> <li><a style="color:crimson; background-color:#f2f2f2">double</a> - Defines a double border</li> <li><a style="color:crimson; background-color:#f2f2f2">groove</a> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+       <li><a style="color:crimson; background-color:#f2f2f2">ridge</a> - Defines a 3D ridged border. The effect depends on the border-color value</li> <li><a style="color:crimson; background-color:#f2f2f2">inset</a> - Defines a 3D inset border. The effect depends on the border-color value</li> <li><a style="color:crimson; background-color:#f2f2f2">outset</a> - Defines a 3D outset border. The effect depends on the border-color value</li> <li><a style="color:crimson; background-color:#f2f2f2">none</a> - Defines no border</li> <li><a style="color:crimson; background-color:#f2f2f2">hidden</a> - Defines a hidden border</li>
+  </ul>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">border-style</a> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+  <img src="css-pic\a60.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style"> <img src="css-pic\a61.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <strong> Note: </strong> None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the <a style="color:crimson; background-color:#f2f2f2"> border-style </a> property is set! </p>
+  <hr><hr>
+</div>
+
+
+<div id="Border Width" class="tabcontent">
+  <h3> CSS Border Width </h3>
+  <hr>
+  <p> The <a style="color:crimson; background-color:#f2f2f2"> border-width</a> property specifies the width of the four borders.<br><br> The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:</p>
+  <img src="css-pic\a62.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-width"> <img src="css-pic\a63.png"> </a>
+  <hr>
+  <h4> Specific Side Widths </h4>
+  <p> The <a style="color:crimson; background-color:#f2f2f2">border-width</a> property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-width2"> <img src="css-pic\a64.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Border Color" class="tabcontent">
+  <h3> CSS Border Color </h3>
+  <hr>
+  <p> The <a style="color:crimson; background-color:#f2f2f2">border-color</a> property is used to set the color of the four borders.<br><br> The color can be set by:</p>
+  <ul> <li>name - specify a color name, like &quot;red&quot;</li> <li>HEX - specify a HEX value, like &quot;#ff0000&quot;</li> <li>RGB - specify a RGB value, like &quot;rgb(255,0,0)&quot;</li> <li>HSL - specify a HSL value, like &quot;hsl(0, 100%, 50%)&quot;</li> <li>transparent</li> </ul>
+  <p><strong>Note:</strong> If <a style="color:crimson; background-color:#f2f2f2">border-color</a> is not set, it inherits the color of the element.</p>
+  <img src="css-pic\a65.png">
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color1"> <img src="css-pic\a66.png"> </a>
+  <hr>
+  <h4> Specific Side Colors </h4>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">border-color</a> property can have from one to four values (for the top border, right border, bottom border, and the left border).&nbsp;</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color2"> <img src="css-pic\a67.png"> </a>
+  <hr>
+  <h4> HEX Values </h4>
+  <p> The color of the border can also be specified using a hexadecimal value (HEX):</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color-hex"> <img src="css-pic\a68.png"> </a>
+  <hr>
+  <h4> RGB Values </h4>
+  <p> Or by using RGB values:</p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color-rgb"> <img src="css-pic\a69.png"> </a>
+  <hr>
+  <h4> HSL Values </h4>
+  <p> You can also use HSL values: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color-hsl"> <img src="css-pic\a70.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> You can learn more about HEX, RGB and HSL values in our <a>  <button class="tablinks" onclick="openCity(event, 'Colors')">Colors</button> </a> chapters.</p>
+  <hr><hr>
+</div>
+
+<div id="Border Sides" class="tabcontent">
+  <h3> CSS Border Sides </h3>
+  <hr>
+  <p> From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.<br><br> In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left): </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-side"> <img src="css-pic\a71.png"> </a>
+  <p> The example above gives the same result as this: </p>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-side2"> <img src="css-pic\a72.png"> </a>
+  <p>So, here is how it works:<br><br> If the <a style="color:crimson; background-color:#f2f2f2">border-style</a> property has four values:</p>
+  <ul> <li><b>border-style: dotted solid double dashed; </b> <ul><li>top border is dotted</li> <li>right border is solid</li> <li>bottom border is double</li> <li>left border is dashed</li> </ul> </li></ul>
+  <p> If the <a style="color:crimson; background-color:#f2f2f2">border-style</a> property has three values:</p>
+  <ul> <li><b>border-style: dotted solid double;</b> <ul><li>top border is dotted</li> <li>right and left borders are solid</li> <li>bottom border is double</li></ul> </li></ul>
+  <p> If the <a style="color:crimson; background-color:#f2f2f2">border-style</a> property has two values:</p>
+  <ul> <li><b>border-style: dotted solid;</b> <ul><li>top and bottom borders are dotted</li> <li>right and left borders are solid</li></ul> </li></ul>
+  <p> If the <a style="color:crimson; background-color:#f2f2f2">border-style</a> property has one value:</p>
+  <ul> <li><b>border-style: dotted;</b><ul><li>all four borders are dotted</li></ul> </li></ul>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-side2"> <img src="css-pic\a73.png"> </a>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> The <a style="color:crimson; background-color:#f2f2f2"> border-style </a> property is used in the example above. However, it also works with <a style="color:crimson; background-color:#f2f2f2"> border-width</a> and <a style="color:crimson; background-color:#f2f2f2"> border-color</a>. </p>
+  <hr><hr>
+</div>
+
+<div id="Border Shorthand" class="tabcontent">
+  <h3> CSS Shorthand Border Property </h3>
+  <hr>
+  <p> Like you saw in the previous page, there are many properties to consider when dealing with borders.<br><br> To shorten the code, it is also possible to specify all the individual border properties in one property.<br><br> The <a style="color:crimson; background-color:#f2f2f2">border</a> property is a shorthand property for the following individual border properties:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">border-width</a></li> <li><a style="color:crimson; background-color:#f2f2f2">border-style</a> (required)</li> <li><a style="color:crimson; background-color:#f2f2f2">border-color</a></li> </ul>
+  <a href ="https://www.w3schools.com/css/tryit.asp?filename=trycss_border"> <img src="css-pic\a74.png"> </a>
+  <p> You can also specify all the individual border properties for just one side: </p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_left"> <img src="css-pic\a75.png"> </a>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_bottom"> <img src="css-pic\a76.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="Rounded Borders" class="tabcontent">
+  <h3> CSS Rounded Borders </h3>
+  <hr>
+  <p> The <a style="color:crimson; background-color:#f2f2f2"> border-radius </a> property is used to add rounded borders to an element: </p>
+  <p style="border: 2px solid red;padding:5px;">Normal border</p> <p style="border: 2px solid red;border-radius: 5px;padding:5px;">Round border</p> <p style="border: 2px solid red;border-radius: 8px;padding:5px;">Rounder border</p> <p style="border: 2px solid red;border-radius: 12px;padding:5px;">Roundest border</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border_round"> <img src="css-pic\a77.png"> </a>
+  <hr>
+  <h4> More Examples </h4>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-top">All the top border properties in one declaration</a><br> This example demonstrates a shorthand property for setting all of the properties for the top border in one declaration.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-bottom-style">Set the style of the bottom border</a><br> This example demonstrates how to set the style of the bottom border.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-left-width">Set the width of the left border</a><br> This example demonstrates how to set the width of the left border.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color">Set the color of the four borders</a><br> This example demonstrates how to set the color of the four borders. It can have from one to four colors.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-right-color">Set the color of the right border</a><br> This example demonstrates how to set the color of the right border.</p>
+  <hr><hr>
+</div>
+
+<div id="CSS Margins" class="tabcontent">
+  <h3> CSS Margins </h3>
+  <hr>
+  <p> Margins are used to create space around elements, outside of any defined borders. </p>
+  <hr>
+  <p class="w3-theme-border" style="margin: 90px;border: 1px solid #4CAF50;"> This element has a margin of 70px.</p>
+  <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_intro" class="ws-btn">Try it Yourself &raquo;</a>
+  <hr>
+  <h4> CSS Margins </h4>
+  <p> The CSS <a style="color:crimson; background-color:#f2f2f2">margin</a> properties are used to create space around elements, outside of any defined borders.<br><br> With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+  <hr>
+  <h4> Margin - Individual Sides </h4>
+  <p> CSS has properties for specifying the margin for each side of an element:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">margin-top</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-right</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-bottom</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-left</a></li> </ul>
+  <p> All the margin properties can have the following values:</p>
+  <ul> <li>auto - the browser calculates the margin</li> <li><em>length</em> - specifies a margin in px, pt, cm, etc.</li> <li><em>%</em> - specifies a margin in % of the width of the containing element</li> <li>inherit - specifies that the margin should be inherited from the parent element</li> </ul>
+  <p> <b>Tip:</b> Negative values are allowed.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_sides"> <img src="css-pic\a78.png"> </a>
+  <h4> Margin - Shorthand Property </h4>
+  <p> To shorten the code, it is possible to specify all the margin properties in one property.<br><br>The <a style="color:crimson; background-color:#f2f2f2">margin</a> property is a shorthand property for the following individual margin properties:</p>
+  <ul><li><a style="color:crimson; background-color:#f2f2f2">margin-top</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-right</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-bottom</a></li> <li><a style="color:crimson; background-color:#f2f2f2">margin-left</a></li> </ul>
+  <p> So, here is how it works:<br><br> If the <a style="color:crimson; background-color:#f2f2f2">margin</a> property has four values:</p>
+  <ul> <li><b>margin: 25px 50px 75px 100px; </b> <ul><li>top margin is 25px</li> <li>right margin is 50px</li> <li>bottom margin is 75px</li> <li>left margin is 100px</li></ul> </li> </ul>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_4val"> <img src="css-pic\a79.png"> </a>
+  <p> If the <a style="color:crimson; background-color:#f2f2f2">margin</a> property has three values:</p>
+  <ul> <li><b>margin: 25px 50px 75px;</b><ul> <li>top margin is 25px</li> <li>right and left margins are 50px</li> <li>bottom margin is 75px</li></ul> </li></ul>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_3val"> <img src="css-pic\a80.png"> </a>
+  <p> If the <a style="color:crimson; background-color:#f2f2f2">margin</a> property has two values:</p>
+  <ul> <li><b>margin: 25px 50px;</b><ul><li>top and bottom margins are 25px</li> <li>right and left margins are 50px</li></ul> </li></ul>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand_2val"> <img src="css-pic\a81.png"> </a>
+  <hr>
+  <h4>The auto Value </h4>
+  <p>You can set the margin property to <a style="color:crimson; background-color:#f2f2f2">auto</a> to horizontally center the element within its container.<br><br> The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto"> <img src="css-pic\a82.png"> </a>
+  <h4> The inherit Value </h4>
+  <p> This example lets the left margin of the &lt;p class=&quot;ex1&quot;&gt; element be inherited from the parent element (&lt;div&gt;):</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_margin-left_inherit"> <img src="css-pic\a83.png"> </a>
+  <hr><hr>
+</div>
+
+<div id="CSS Padding" class="tabcontent">
+  <h3> CSS Padding </h3>
+  <hr>
+  <p> Padding is used to create space around an element's content, inside of any defined borders. </p>
+  <hr>
+  <p style="border:1px solid #4CAF50; padding:70px"> This element has a padding of 70px. </p>
+  <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_intro" class="ws-btn">Try it Yourself &raquo;</a>
+  <hr>
+  <h4> CSS Padding </h4>
+  <p>The CSS <a style="color:crimson; background-color:#f2f2f2">padding</a> properties are used to generate space around an element's content, inside of any defined borders.<br><br> With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+  <hr>
+  <h4> Padding - Individual Sides </h4>
+  <p> CSS has properties for specifying the padding for each side of an element:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">padding-top</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-right</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-bottom</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-left</a></li> </ul>
+  <p> All the padding properties can have the following values:</p>
+  <ul> <li><em>length</em> - specifies a padding in px, pt, cm, etc.</li> <li><em>%</em> - specifies a padding in % of the width of the containing element</li> <li>inherit - specifies that the padding should be inherited from the parent element</li> </ul>
+  <p> <b>Note:</b> Negative values are not allowed.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_sides"> <img src="css-pic\a84.png"> </a>
+  <hr>
+  <h4> Padding - Shorthand Property </h4>
+  <p> To shorten the code, it is possible to specify all the padding properties in one property.</p>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">padding</a> property is a shorthand property for the following individual padding properties:</p>
+  <ul> <li><a style="color:crimson; background-color:#f2f2f2">padding-top</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-right</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-bottom</a></li> <li><a style="color:crimson; background-color:#f2f2f2">padding-left</a></li> </ul>
+  <p>So, here is how it works:<br><br> If the <a style="color:crimson; background-color:#f2f2f2">padding</a> property has four values:</p>
+  <ul> <li><b>padding: 25px 50px 75px 100px; </b> <ul><li>top padding is 25px</li> <li>right padding is 50px</li> <li>bottom padding is 75px</li> <li>left padding is 100px</li></ul> </li></ul>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val"> <img src="css-pic\a85.png"> </a>
+  <p>If the <a style="color:crimson; background-color:#f2f2f2">padding</a> property has three values:</p>
+  <ul> <li><b>padding: 25px 50px 75px;</b><ul> <li>top padding is 25px</li> <li>right and left paddings are 50px</li> <li>bottom padding is 75px</li></ul> </li></ul>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_3val"> <img src="css-pic\a86.png"> </a>
+  <h4> Padding and Element Width </h4>
+  <p>The CSS <a style="color:crimson; background-color:#f2f2f2">width</a> property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (<a> <button class="tablinks" onclick="openCity(event, 'CSS Box Model')">the box model</button> </a>).</p>
+  <p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width"> <img src="css-pic\a87.png"> </a>
+  <p> To keep the width at 300px, no matter the amount of padding, you can use the <a style="color:crimson; background-color:#f2f2f2">box-sizing </a> property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease. </p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width2"> <img src="css-pic\a88.png"> </a>
+  <hr>
+  <h4> More Examples </h4>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-left">Set the left padding</a><br> This example demonstrates how to set the left padding of a &lt;p&gt; element.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-right">Set the right padding</a><br> This example demonstrates how to set the right padding of a &lt;p&gt; element.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-top">Set the top padding</a><br> This example demonstrates how to set the top padding of a &lt;p&gt; element.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-bottom">Set the bottom padding</a><br> This example demonstrates how to set the bottom padding of a &lt;p&gt; element.</p>
+  <hr><hr>  
+</div>
+
+<div id="CSS Height/Width" class="tabcontent">
+  <h3> CSS Height, Width and Max-width </h3>
+  <hr>
+  <p> The CSS <a style="color:crimson; background-color:#f2f2f2">height</a> and <a style="color:crimson; background-color:#f2f2f2">width</a> properties are used to set the height and width of an element.<br><br> The CSS <a style="color:crimson; background-color:#f2f2f2">max-width</a> property is used to set the maximum width of an element.</p>
+  <hr>
+  <p style="height: 40px; width: 100%; border: 1px solid #4CAF50;"> This element has a height of 50 pixels and a width of 100%. </p>
+  <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_height_width_intro" class="ws-btn">Try it Yourself &raquo;</a>
+  <hr>
+  <h4> CSS Setting height and width </h4>
+  <p>The <a style="color:crimson; background-color:#f2f2f2">height</a> and <code class="w3-codespan">width</code> properties are used to set the height and width of an element.<br><br> The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</p>
+  <hr>
+  <h4> CSS height and width Values </h4>
+  <p>The <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code> properties may have the following values:</p>
+  <ul> <li><code class="w3-codespan">auto</code> - This is default. The browser calculates the height and width</li> <li><code class="w3-codespan">length</code> - Defines the height/width in px, cm etc.</li> <li><code class="w3-codespan">%</code> - Defines the height/width in percent of the containing block</li> <li><code class="w3-codespan">initial</code> - Sets the height/width to its default value</li> <li><code class="w3-codespan">inherit</code> - The height/width will be inherited from its parent value</li>
+  </ul><hr>
+  <h4> CSS height and width Examples </h4>
+  <div class="w3-theme-border" style="width:50%;height:200px;padding:10px;background-color:powderblue;color:black;"> This element has a height of 200 pixels and a width of 50%</div>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width2"> <img src="css-pic\a89.png"> </a>
+  <div class="w3-theme-border" style="height:100px;width:500px;padding:10px;background-color:powderblue;color:black"> This element has a height of 100 pixels and a width of 500 pixels.</div>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_width"> <img src="css-pic\a90.png"> </a>
+  <p><strong>Note:</strong> Remember that the <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p>
+  <hr>
+  <h4> Setting max-width </h4>
+  <p> The <code class="w3-codespan">max-width</code> property is used to set the maximum width of an element.<br><br> The <code class="w3-codespan">max-width</code> can be specified in <em>length values</em>, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+  <p>The problem with the <code class="w3-codespan">&lt;div&gt;</code> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.<br><br> Using <code class="w3-codespan">max-width</code> instead, in this situation, will improve the browser's handling of small windows.</p>
+  <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between the two divs!</p>
+  <div class="w3-theme-border" style="padding:10px;background-color:powderblue;color:black;height:100px; max-width:500px;"> This element has a height of 100 pixels and a max-width of 500 pixels.</div>
+  <p><strong>Note:</strong> If you for some reason use both the<code class="w3-codespan">width</code> property and the<code class="w3-codespan">max-width</code> property on the same element, and the value of the<code class="w3-codespan">width</code> property is larger than the<code class="w3-codespan">max-width</code> property; the<code class="w3-codespan">max-width</code> property will be used (and the<code class="w3-codespan">width</code> property will be ignored).</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max_width"> <img src="css-pic\a91.png"> </a>
+  <hr>
+  <h4> Try it Yourself - Examples </h4>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height">Set the height and width of elements</a><br> This example demonstrates how to set the height and width of different elements.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent">Set the height and width of an image using percent</a><br> This example demonstrates how to set the height and width of an image using a percent value.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width">Set min-width and max-width of an element</a><br> This example demonstrates how to set a minimum width and a maximum width of an element using a pixel value.</p>
+  <p><a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height">Set min-height and max-height of an element</a><br> This example demonstrates how to set a minimum height and a maximum height of an element using a pixel value.</p>
+  <hr><hr>
+</div>
+
+<div id="CSS Box Model" class="tabcontent">
+  <h3> CSS Box Model </h3>
+  <hr>
+  <p> All HTML Elements can be considered as boxes. </p>
+  <hr>
+  <h4> The CSS Box Model </h4>
+  <p>In CSS, the term &quot;box model&quot; is used when talking about design and layout.<br><br> The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+  <div class="w3-boxmodel" style="text-align:center"> <div class="margin"> Margin
+    <div class="border w3-theme"> Border
+      <div class="padding"> Padding
+        <div class="content"> Content </div> 
+       </div>
+    </div>
+  </div></div>
+  <p> Explanation of the different parts:</p>
+  <ul> <li><b>Content</b> - The content of the box, where text and images appear</li> <li><b>Padding</b> - Clears an area around the content. The padding is transparent</li> <li><b>Border</b> - A border that goes around the padding and content</li> <li><b>Margin</b> - Clears an area outside the border. The margin is transparent</li> </ul>
+  <p>The box model allows us to add a border around elements, and to define space between elements.&nbsp;</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel"> <img src="css-pic\a92.png"> </a>
+  <hr>
+  <h4> Width and Height of an Element </h4>
+  <p> In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.</p>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <b>Important:</b> When you set the width and height properties of an element with CSS, you just set the width and height of the <br> <b>content area</b>. To calculate the full size of an element, you must also add padding, borders and margins.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel_width"> <img src="css-pic\a93.png"> </a>
+  <p>Here is the calculation: </p>
+  <div class="w3-leftbar w3-border w3-padding w3-theme-border"> 320px (width)<br> + 20px (left + right padding)<br> + 10px (left + right border)<br> + 0px (left + right margin)<br> <strong>= 350px </strong> </div>
+  <p> The total width of an element should be calculated like this:<br><br> Total element width = width + left padding + right padding + left border + right border + left margin + right margin<br><br> The total height of an element should be calculated like this:<br><br> Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+  <hr><hr>
+</div>
+
+<div id="CSS Outline" class="tabcontent">
+  <h3> CSS Outline </h3>
+  <hr>
+  <p> An outline is a line drawn outside the elements's border. </p>
+  <br>
+  <div style="width:98%;border:2px solid black;outline:#04AA6D solid 10px;padding:20px;margin:auto;text-align:center"> This element has a black border and a green outline with a width of 10px. </div>
+  <br>
+  <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline_intro" class="ws-btn">Try it Yourself &raquo;</a>
+  <hr>
+  <h4> CSS Outline </h4>
+  <p> An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element &quot;stand out&quot;.</p>
+  <p> CSS has the following outline properties:</p>
+  <ul> <li> <code class="w3-codespan">outline-style</code></li> <li> <code class="w3-codespan">outline-color</code></li> <li> <code class="w3-codespan">outline-width</code></li> <li> <code class="w3-codespan">outline-offset</code></li> <li> <code class="w3-codespan">outline</code></li> </ul>
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <b>Note:</b> Outline differs from <a href="css_border.asp">borders</a>! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.</p>
+  <hr>
+  <h4> CSS Outline Color </h4>
+  <p> The <code class="w3-codespan">outline-color</code> property is used to set the color of the outline.<br><br> The color can be set by:</p>
+  <ul> <li>name - specify a color name, like &quot;red&quot;</li> <li>HEX - specify a hex value, like &quot;#ff0000&quot;</li> <li>RGB - specify a RGB value, like &quot;rgb(255,0,0)&quot;</li> <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li> <li>invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)</li> </ul>
+  <p> The following example shows some different outlines with different colors. Also notice that these elements also have a thin black border inside the outline:</p>
+  <p style="border: 2px solid black;outline-style:solid;outline-color:red;padding: 2px 4px;">A solid red outline.</p>
+  <p style="border: 2px solid black;outline-style:dotted;outline-color:blue;padding: 2px 4px;">A dotted blue outline.</p>
+  <p style="border: 2px solid black;outline-style:outset;outline-color:grey;padding: 2px 4px;">An outset grey outline.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-color"> <img src="css-pic\a94.png"> </a>  
+  <hr>
+  <h4> CSS Outline - Shorthand property </h4>
+  <p> The <code class="w3-codespan">outline</code> property is a shorthand property for setting the following individual outline properties:</p>
+  <ul> <li><code class="w3-codespan">outline-width</code></li> <li><code class="w3-codespan">outline-style</code> (required)</li> <li><code class="w3-codespan">outline-color</code></li> </ul>
+  <p> The <code class="w3-codespan">outline</code> property is specified as one, two, or three values from the list above. The order of the values does not matter.</p>
+  <p> The following example shows some outlines specified with the shorthand <code class="w3-codespan">outline</code> property:</p>
+  <p style="outline: dashed;padding: 2px 4px;">A dashed outline.</p>
+  <p style="outline: dotted red;padding: 2px 4px;">A dotted red outline.</p>
+  <p style="outline: 5px solid yellow;padding: 2px 4px;">A 5px solid yellow outline.</p>
+  <p style="outline: ridge thick pink;padding: 2px 4px;">A thick ridge pink outline.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline"> <img src="css-pic\a95.png"> </a> 
+  <hr>
+  <h4> CSS Outline Offset </h4>
+  <p>The <code class="w3-codespan">outline-offset</code> property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
+  <p>The following example specifies an outline 15px outside the border edge:</p>
+  <p style="margin:30px;border:1px solid black;outline:1px solid red;outline-offset:15px;"> This paragraph has an outline 15px outside the border edge.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_outline-offset"> <img src="css-pic\a96.png"> </a> 
+  <hr><hr>
+</div>
+
+<div id="Text Color" class="tabcontent">
+  <h3> CSS Text </h3>
+  <hr>
+  <p> CSS has a lo of properties for formatting text. </p>
+  <div style="margin:auto;border:1px solid gray;padding:8px;">
+    <h1 style="text-align:center;text-transform:uppercase;color:#04AA6D;">text formatting</h1>
+    <p style="text-indent:50px;text-align:justify;letter-spacing:3px;">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored <a style="text-decoration:none;color:#008CBA;" target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text">&quot;Try it Yourself&quot;</a> link.</p>
+  </div><br>
+  <a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text" class="ws-btn">Try it Yourself &raquo;</a>
+  <hr>
+  <h4> Text Color </h4>
+  <p>The <code class="w3-codespan">color</code> property is used to set the color of the text. The color is specified by:</p>
+  <ul> <li>a color name - like &quot;red&quot;</li> <li>a HEX value - like &quot;#ff0000&quot;</li> <li>an RGB value - like &quot;rgb(255,0,0)&quot;</li> </ul>
+  <p>Look at <a href="#">CSS Color Values</a> for a complete list of possible color values.<br><br> The default text color for a page is defined in the body selector.</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color"> <img src="css-pic\a97.png"> </a> 
+  <hr>
+  <h4> Text Color and Background Color </h4>
+  <p> In this example, we define both the <code class="w3-codespan">background-color</code> property and the <code class="w3-codespan">color</code> property:</p>
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_bg"> <img src="css-pic\a98.png"> </a> 
+  <p style ="background-color:#ffddcc; padding-left:20px; padding-top:20px; padding-bottom:20px"> <strong> Important: </strong> High contrast is very important for people with vision problems. So, always ensure that the contrast between the text color and the background color (or background image) is good! </p> 
+  <hr><hr>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
